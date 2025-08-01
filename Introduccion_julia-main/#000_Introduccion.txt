@@ -1,0 +1,224 @@
+# Introducción a Julia
+
+¡Bienvenido al mundo de la programación con Julia!
+
+## ¿Qué es Julia?
+
+Julia es un lenguaje de programación de alto nivel, alto rendimiento y propósito general que fue especialmente diseñado para la computación científica y técnica. Combina la facilidad de uso de lenguajes como Python y R con la velocidad de C y Fortran.
+
+## Características principales
+
+### 🚀 **Velocidad**
+- Compilación Just-In-Time (JIT) que alcanza velocidades cercanas a C
+- Optimizaciones automáticas del compilador
+- Paralelización nativa y computación distribuida
+
+### 🎯 **Facilidad de uso**
+- Sintaxis simple e intuitiva
+- REPL (Read-Eval-Print Loop) interactivo
+- Notebooks de Jupyter integrados
+- Documentación excelente
+
+### 🔬 **Diseñado para ciencia**
+- Manejo nativo de números complejos
+- Álgebra lineal optimizada
+- Integración con bibliotecas científicas existentes
+- Ecosistema robusto de paquetes especializados
+
+### 🌐 **Interoperabilidad**
+- Llamadas directas a funciones de C y Fortran
+- Integración con Python (PyCall)
+- Compatibilidad con R (RCall)
+- Uso de bibliotecas de JavaScript y Java
+
+### 🧩 **Expresividad**
+- Sistema de tipos sofisticado pero opcional
+- Metaprogramación avanzada con macros
+- Multiple dispatch (despacho múltiple)
+- Programación genérica potente
+
+## ¿Por qué aprender Julia?
+
+1. **Resuelve el "problema de dos lenguajes"**: No necesitas prototipo en Python y luego reescribir en C
+2. **Ecosistema en crecimiento**: Comunidad activa y paquetes especializados
+3. **Futuro brillante**: Adoptado por universidades, NASA, Google, y más
+4. **Curva de aprendizaje suave**: Si conoces Python o MATLAB, Julia te resultará familiar
+
+## ¿Quién usa Julia?
+
+- **Investigadores**: Modelado climático, física, astronomía, biología
+- **Ingenieros**: Procesamiento de señales, control de sistemas, simulaciones
+- **Data Scientists**: Machine learning, análisis de datos, visualización
+- **Financieros**: Risk management, modelado quantitativo, trading algorítmico
+- **Startups y empresas**: Desde fintech hasta farmacéuticas
+
+## Historia rápida
+
+- **2009**: Comenzó el desarrollo en MIT
+- **2012**: Código fuente abierto
+- **2018**: Julia 1.0 - primera versión estable
+- **2023**: Julia 1.9+ - madurez y adopción masiva
+
+## Comparación rápida
+
+| Característica | Julia | Python | R | MATLAB | C++ |
+|---|---|---|---|---|---|
+| **Velocidad** | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| **Facilidad** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ |
+| **Científico** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| **Ecosistema** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+
+## Instalación rápida
+
+1. Visita [julialang.org](https://julialang.org/downloads/)
+2. Descarga la versión más reciente para tu sistema operativo
+3. Instala siguiendo las instrucciones
+4. Ejecuta `julia` en tu terminal o abre Julia desde tu menú de aplicaciones
+
+## Tu primer programa
+
+```julia
+# Esto es un comentario
+println("¡Hola, mundo desde Julia!")
+
+# Variables
+nombre = "Programador"
+edad = 25
+
+# Interpolación de strings
+println("Hola $nombre, tienes $edad años")
+
+# Operaciones matemáticas
+resultado = 2^10  # 2 elevado a la 10
+println("2^10 = $resultado")
+
+# Arrays
+numeros = [1, 2, 3, 4, 5]
+cuadrados = numeros.^2  # Elevar cada elemento al cuadrado
+println("Números: $numeros")
+println("Cuadrados: $cuadrados")
+
+# Función
+function fibonacci(n)
+    if n <= 1
+        return n
+    else
+        return fibonacci(n-1) + fibonacci(n-2)
+    end
+end
+
+# Usar la función
+println("Fibonacci(10) = $(fibonacci(10))")
+```
+
+## Estructura de este curso
+
+Este material está organizado en tres niveles progresivos:
+
+### 📚 **Ejercicios Básicos** (`Ejercicios/`)
+- Variables y tipos de datos
+- Operaciones matemáticas y lógicas
+- Strings y manipulación de texto
+- Arrays, tuplas y diccionarios
+- Control de flujo (if, for, while)
+- Funciones básicas
+- Structs y manejo de errores
+- Módulos básicos
+
+### 🔧 **Ejercicios Intermedios** (`Ejercicios_intermedios/`)
+- Proyectos prácticos combinando conceptos básicos
+- Calculadora avanzada con historial
+- Analizador de texto
+- Conversor de unidades
+- Generador de números primos
+- Juegos simples
+- Calculadora financiera
+
+### 🚀 **Ejercicios Avanzados** (`Ejercicios_avanzados/`)
+- Calculadora de matrices con álgebra lineal
+- Algoritmos genéticos
+- Conversión JSON a estructuras
+- Web scraping con HTTP
+- Conceptos avanzados de programación
+
+### 📓 **Notebooks Interactivos** (`Notebooks/`)
+- Tutorial completo de introducción
+- Guía de visualización con Plots.jl
+- Ejemplos prácticos ejecutables
+
+### 🌐 **Tutoriales Web** (`site/`)
+- Guía de inicio rápido para principiantes
+- Material complementario
+- Referencias y recursos adicionales
+
+## Consejos para aprender
+
+1. **Practica regularmente**: Dedica al menos 30 minutos diarios
+2. **Experimenta**: Modifica los ejemplos y ve qué pasa
+3. **Lee documentación**: Julia tiene excelente documentación
+4. **Únete a la comunidad**: Discourse, Slack, GitHub
+5. **Construye proyectos**: Aplica lo aprendido a problemas reales
+
+## Recursos adicionales
+
+### Documentación oficial
+- [Documentación de Julia](https://docs.julialang.org/)
+- [Manual de Julia](https://docs.julialang.org/en/v1/manual/)
+- [Biblioteca estándar](https://docs.julialang.org/en/v1/stdlib/)
+
+### Comunidad
+- [Julia Discourse](https://discourse.julialang.org/) - Foro principal
+- [Julia Slack](https://julialang.org/slack/) - Chat en tiempo real
+- [JuliaHub](https://juliahub.com/) - Plataforma de desarrollo
+
+### Paquetes
+- [General Registry](https://github.com/JuliaRegistries/General) - Paquetes oficiales
+- [JuliaPackages.com](https://juliapackages.com/) - Explorador de paquetes
+- [JuliaHub Packages](https://juliahub.com/ui/Packages) - Búsqueda avanzada
+
+### Aprendizaje
+- [Julia Academy](https://juliaacademy.com/) - Cursos gratuitos
+- [Exercism Julia Track](https://exercism.org/tracks/julia) - Ejercicios guiados
+- [Julia Tutorials](https://julialang.org/learning/) - Lista completa
+
+### Libros recomendados
+- "Julia High Performance" por Avik Sengupta
+- "Hands-On Design Patterns in Julia" por Tom Kwong
+- "Think Julia" por Ben Lauwens y Allen Downey
+- "Julia Programming for Operations Research" por Changhyun Kwon
+
+## Contribuir
+
+Si encuentras errores, tienes sugerencias o quieres contribuir con más ejemplos:
+
+1. Reporta issues o bugs
+2. Propón mejoras
+3. Comparte tus propios ejercicios
+4. Ayuda a otros estudiantes
+
+## Licencia
+
+Este material es de uso libre para fines educativos. Siéntete libre de compartir, modificar y mejorar el contenido.
+
+---
+
+## ¡Empecemos!
+
+### Pasos sugeridos:
+
+1. **Instala Julia** si aún no lo has hecho
+2. **Prueba el REPL** ejecutando `julia` en tu terminal
+3. **Comienza con los ejercicios básicos** en orden
+4. **Experimenta con los notebooks** para una experiencia interactiva
+5. **Avanza a ejercicios intermedios y avanzados** a tu ritmo
+
+### Primer ejercicio recomendado:
+Ejecuta el archivo `Ejercicios/#001_variables_y_tipos.jl`
+
+```bash
+julia Ejercicios/#001_variables_y_tipos.jl
+```
+
+¡Bienvenido a tu viaje con Julia! 🎉
+
+El futuro de la computación científica está aquí, y ahora tienes las herramientas para ser parte de él.

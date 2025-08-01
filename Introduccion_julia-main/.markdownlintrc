@@ -1,0 +1,15 @@
+# Configuración de Markdownlint para el proyecto
+# Desactiva reglas problemáticas para este tipo de documentación
+
+# Desactivar reglas específicas
+MD022: false  # blanks-around-headings
+MD026: false  # no-trailing-punctuation  
+MD031: false  # blanks-around-fences
+MD032: false  # blanks-around-lists
+MD013: false  # line-length
+MD033: false  # no-inline-html
+MD041: false  # first-line-heading
+MD040: false  # fenced-code-language
+MD046: false  # code-block-style
+MD048: false  # code-fence-style
+MD040: false
