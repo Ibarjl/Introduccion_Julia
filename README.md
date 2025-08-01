@@ -19,7 +19,15 @@ Julia es un lenguaje de programación de alto nivel y alto rendimiento diseñado
 
 ## 📖 Estructura del Curso
 
-### 📁 **Ejercicios Básicos** (`Ejercicios/`)
+### � **Notebooks Interactivos** (`Notebooks/`)
+Guías interactivas para aprender Julia de forma práctica:
+
+- **`beginner.ipynb`** - Tutorial Jupyter tradicional con ejercicios básicos
+- **`beginner_pluto.jl`** - Notebook Pluto.jl reactivo (¡RECOMENDADO!)
+
+> 💡 **Recomendación**: Usa el notebook de Pluto.jl para una mejor experiencia de aprendizaje
+
+### �📁 **Ejercicios Básicos** (`Ejercicios/`)
 Fundamentos esenciales de Julia - 13 ejercicios progresivos:
 
 1. **Variables y Tipos** - Tipos de datos básicos y declaración de variables
@@ -95,7 +103,19 @@ cd introduccion-julia
 
 ## 🚀 Cómo Usar Este Curso
 
-### Opción 1: Ejercicios Paso a Paso
+### 🌟 Opción 1: Pluto.jl (RECOMENDADO)
+```bash
+# Abrir Julia e instalar Pluto.jl
+julia
+julia> using Pkg; Pkg.add("Pluto")
+julia> using Pluto; Pluto.run()
+
+# Luego abre beginner_pluto.jl en tu navegador
+```
+
+> 📖 Ver guía completa en [`PLUTO_SETUP.md`](PLUTO_SETUP.md)
+
+### Opción 2: Ejercicios Paso a Paso
 ```bash
 # Empezar con ejercicios básicos
 julia Ejercicios/#001_variables_y_tipos.jl
@@ -105,7 +125,7 @@ julia Ejercicios/#002_operaciones.jl
 # ... y así sucesivamente
 ```
 
-### Opción 2: Notebooks Interactivos
+### Opción 3: Notebooks Jupyter Tradicionales
 ```bash
 # Instalar IJulia (una sola vez)
 julia -e 'using Pkg; Pkg.add("IJulia")'
@@ -134,7 +154,31 @@ julia> include("Ejercicios/#001_variables_y_tipos.jl")
 - Matemáticas de bachillerato
 - Experiencia con terminal/línea de comandos
 
-## 🎯 Objetivos de Aprendizaje
+## � ¿Por qué Pluto.jl?
+
+Recomendamos usar **Pluto.jl** en lugar de Jupyter porque:
+
+### ✅ Ventajas de Pluto.jl:
+- **🔄 Reactividad**: Los cambios se propagan automáticamente
+- **🎯 Orden automático**: No importa el orden de ejecución de celdas
+- **📦 Gestión de dependencias**: Package manager integrado
+- **🌐 Exportación HTML**: Comparte como páginas web estáticas
+- **🔒 Variables únicas**: Una variable por celda (evita errores)
+- **✨ Interfaz moderna**: Diseño limpio y responsivo
+- **🚀 Nativo Julia**: Diseñado específicamente para Julia
+
+### 📊 Comparación:
+
+| Característica | Pluto.jl | Jupyter |
+|---------------|----------|---------|
+| Reactividad | ✅ Automática | ❌ Manual |
+| Orden de celdas | ✅ Automático | ❌ Dependiente del usuario |
+| Gestión de paquetes | ✅ Integrada | ❌ Manual |
+| Variables por celda | ✅ Una por celda | ❌ Global |
+| Exportación HTML | ✅ Nativa | ⚠️ Requiere nbconvert |
+| Interfaz | ✅ Moderna | ⚠️ Tradicional |
+
+## �🎯 Objetivos de Aprendizaje
 
 Al completar este curso, serás capaz de:
 
