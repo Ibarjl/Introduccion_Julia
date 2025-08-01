@@ -9,8 +9,8 @@ y trabajar con aritmética modular en Julia.
 """
 module OperacionesModulo
 
-export potencia_modular, mcd_extendido, inverso_modular, 
-       es_primo_fermat, generar_primos, factorizar
+export  potencia_modular, mcd_extendido, inverso_modular, 
+        es_primo_fermat, generar_primos, factorizar
 
 """
     potencia_modular(base, exponente, modulo)
