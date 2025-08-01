@@ -108,6 +108,8 @@ cd introduccion-julia
 # Abrir Julia e instalar Pluto.jl
 julia
 julia> using Pkg; Pkg.add("Pluto")
+julia> "press"-> "]"; Pkg.add("Pluto")
+julia>pkg> add Pluto
 julia> using Pluto; Pluto.run()
 
 # Luego abre beginner_pluto.jl en tu navegador
